@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2024-07-11T00:42:05.346044Z",
+  "genesis_time": "2024-07-11T04:32:29.417134Z",
   "chain_id": "spc-devnet-1",
   "initial_height": "1",
   "consensus_params": {
@@ -23,6 +23,7 @@
   },
   "app_hash": "",
   "app_state": {
+    "07-tendermint": null,
     "acl": {
       "params": {
         "enable": false
@@ -163,8 +164,13 @@
     "chainlet": {
       "params": {
         "chainletStackProtections": true,
-        "nEpochDeposit": "30"
-      }
+        "nEpochDeposit": "30",
+        "automaticChainletUpgrades": true,
+        "automaticChainletUpgradeInterval": "100",
+        "launchDelay": "180s",
+        "maxChainlets": "500"
+      },
+      "numChainlets": "0"
     },
     "consensus": null,
     "crisis": {
@@ -316,68 +322,6 @@
               {
                 "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
                 "description": {
-                  "moniker": "emanuel-devnet-1",
-                  "identity": "",
-                  "website": "",
-                  "security_contact": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "min_self_delegation": "1",
-                "delegator_address": "saga1dn0mf8g92fkececy45ft3y8nexaw03qmn67fv4",
-                "validator_address": "sagavaloper1dn0mf8g92fkececy45ft3y8nexaw03qma3g2xy",
-                "pubkey": {
-                  "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "Q7RcOplbeQA/4PKg+vSy5viNOdmmqwssyxn/8PT20eQ="
-                },
-                "value": {
-                  "denom": "stake",
-                  "amount": "1500000"
-                }
-              }
-            ],
-            "memo": "45238cd97a6039084302b7a2e82bf856a21bd6d0@spc.emanuel-devnet-1.spc-devnet-1.sagarpc.xyz:26656",
-            "timeout_height": "0",
-            "extension_options": [],
-            "non_critical_extension_options": []
-          },
-          "auth_info": {
-            "signer_infos": [
-              {
-                "public_key": {
-                  "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "Ap7cFBEXpHLLuDCdfm6qtRmZkjCBWSie+G1UVygfT88p"
-                },
-                "mode_info": {
-                  "single": {
-                    "mode": "SIGN_MODE_DIRECT"
-                  }
-                },
-                "sequence": "0"
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas_limit": "200000",
-              "payer": "",
-              "granter": ""
-            },
-            "tip": null
-          },
-          "signatures": [
-            "W3BjhdooDzGvBCaA8BChFeOvJ9dJXNLQrf9La6YIum1YVuB5O//zrrtXVIW5jhgqvJ73wFQhTcmkxXQjbBUxpQ=="
-          ]
-        },
-        {
-          "body": {
-            "messages": [
-              {
-                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
-                "description": {
                   "moniker": "emanuel-devnet-2",
                   "identity": "",
                   "website": "",
@@ -402,7 +346,7 @@
                 }
               }
             ],
-            "memo": "70939fac29f40bc9eec4b50d4c18b24c92fc6d09@spc.emanuel-devnet-2.spc-devnet-1.sagarpc.xyz:26656",
+            "memo": "b197f4723791299fe7715c35542b39231602041c@spc.emanuel-devnet-2.spc-devnet-1.sagarpc.xyz:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -431,7 +375,69 @@
             "tip": null
           },
           "signatures": [
-            "OMoNMepxbrVy22fmdYKQ37J409hfZGWBzmNHHKDvAIpI0fHfWkoIcgV9a8YKKt5HESdidaoCjGhyOSv2avEvwg=="
+            "kOLEwrHn81ESAsfzhzzvI2j6gNjuEMT2kIcXsb0lQi8EO0QjafVtlgRecFbihvWdu2Zy/w0B36C/qnsvXErAPQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "emanuel-devnet-1",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "saga1dn0mf8g92fkececy45ft3y8nexaw03qmn67fv4",
+                "validator_address": "sagavaloper1dn0mf8g92fkececy45ft3y8nexaw03qma3g2xy",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "Q7RcOplbeQA/4PKg+vSy5viNOdmmqwssyxn/8PT20eQ="
+                },
+                "value": {
+                  "denom": "stake",
+                  "amount": "1500000"
+                }
+              }
+            ],
+            "memo": "e30f576f3b03f603527381a09a60548989d4bbf3@spc.emanuel-devnet-1.spc-devnet-1.sagarpc.xyz:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "Ap7cFBEXpHLLuDCdfm6qtRmZkjCBWSie+G1UVygfT88p"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "sRMMAEcfSz6ehEmqhjZnsd3Dm7vfYY298yzueRpxFMA5wvcQhlZOg902Vb7+DVNZ2tLxefDPYZDwSBthOnkVQA=="
           ]
         }
       ]
@@ -454,7 +460,7 @@
       "params": {
         "min_deposit": [
           {
-            "denom": "stake",
+            "denom": "utsaga",
             "amount": "10000000"
           }
         ],
@@ -479,6 +485,61 @@
       "proposals": [],
       "votes": []
     },
+    "ibc": {
+      "client_genesis": {
+        "clients": [],
+        "clients_consensus": [],
+        "clients_metadata": [],
+        "params": {
+          "allowed_clients": [
+            "06-solomachine",
+            "07-tendermint",
+            "09-localhost"
+          ]
+        },
+        "create_localhost": false,
+        "next_client_sequence": "0"
+      },
+      "connection_genesis": {
+        "connections": [],
+        "client_connection_paths": [],
+        "next_connection_sequence": "0",
+        "params": {
+          "max_expected_time_per_block": "30000000000"
+        }
+      },
+      "channel_genesis": {
+        "channels": [],
+        "acknowledgements": [],
+        "commitments": [],
+        "receipts": [],
+        "send_sequences": [],
+        "recv_sequences": [],
+        "ack_sequences": [],
+        "next_channel_sequence": "0"
+      }
+    },
+    "interchainaccounts": {
+      "controller_genesis_state": {
+        "active_channels": [],
+        "interchain_accounts": [],
+        "ports": [],
+        "params": {
+          "controller_enabled": true
+        }
+      },
+      "host_genesis_state": {
+        "active_channels": [],
+        "interchain_accounts": [],
+        "port": "icahost",
+        "params": {
+          "host_enabled": true,
+          "allow_messages": [
+            "*"
+          ]
+        }
+      }
+    },
     "mint": {
       "minter": {
         "inflation": "0.130000000000000000",
@@ -494,6 +555,110 @@
       }
     },
     "params": null,
+    "peers": {
+      "params": {
+        "maxData": 100
+      }
+    },
+    "provider": {
+      "valset_update_id": "1",
+      "consumer_states": [],
+      "unbonding_ops": [],
+      "mature_unbonding_ops": null,
+      "valset_update_id_to_height": [],
+      "consumer_addition_proposals": [],
+      "consumer_removal_proposals": [],
+      "params": {
+        "template_client": {
+          "chain_id": "",
+          "trust_level": {
+            "numerator": "1",
+            "denominator": "3"
+          },
+          "trusting_period": "0s",
+          "unbonding_period": "0s",
+          "max_clock_drift": "10s",
+          "frozen_height": {
+            "revision_number": "0",
+            "revision_height": "0"
+          },
+          "latest_height": {
+            "revision_number": "0",
+            "revision_height": "0"
+          },
+          "proof_specs": [
+            {
+              "leaf_spec": {
+                "hash": "SHA256",
+                "prehash_key": "NO_HASH",
+                "prehash_value": "SHA256",
+                "length": "VAR_PROTO",
+                "prefix": "AA=="
+              },
+              "inner_spec": {
+                "child_order": [
+                  0,
+                  1
+                ],
+                "child_size": 33,
+                "min_prefix_length": 4,
+                "max_prefix_length": 12,
+                "empty_child": null,
+                "hash": "SHA256"
+              },
+              "max_depth": 0,
+              "min_depth": 0,
+              "prehash_key_before_comparison": false
+            },
+            {
+              "leaf_spec": {
+                "hash": "SHA256",
+                "prehash_key": "NO_HASH",
+                "prehash_value": "SHA256",
+                "length": "VAR_PROTO",
+                "prefix": "AA=="
+              },
+              "inner_spec": {
+                "child_order": [
+                  0,
+                  1
+                ],
+                "child_size": 32,
+                "min_prefix_length": 1,
+                "max_prefix_length": 1,
+                "empty_child": null,
+                "hash": "SHA256"
+              },
+              "max_depth": 0,
+              "min_depth": 0,
+              "prehash_key_before_comparison": false
+            }
+          ],
+          "upgrade_path": [
+            "upgrade",
+            "upgradedIBCState"
+          ],
+          "allow_update_after_expiry": false,
+          "allow_update_after_misbehaviour": false
+        },
+        "trusting_period_fraction": "0.66",
+        "ccv_timeout_period": "2419200s",
+        "init_timeout_period": "604800s",
+        "vsc_timeout_period": "3024000s",
+        "slash_meter_replenish_period": "3600s",
+        "slash_meter_replenish_fraction": "0.05",
+        "consumer_reward_denom_registration_fee": {
+          "denom": "utsaga",
+          "amount": "10000000"
+        },
+        "blocks_per_epoch": "600"
+      },
+      "validator_consumer_pubkeys": [],
+      "validators_by_consumer_addr": [],
+      "consumer_addrs_to_prune": [],
+      "init_timeout_timestamps": [],
+      "exported_vsc_send_timestamps": []
+    },
     "saga": {
       "params": {}
     },
@@ -524,6 +689,15 @@
       "unbonding_delegations": [],
       "redelegations": [],
       "exported": false
+    },
+    "transfer": {
+      "port_id": "transfer",
+      "denom_traces": [],
+      "params": {
+        "send_enabled": true,
+        "receive_enabled": true
+      },
+      "total_escrowed": []
     },
     "upgrade": {},
     "vesting": {}
