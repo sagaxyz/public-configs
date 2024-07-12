@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2024-07-11T04:59:13.188577Z",
+  "genesis_time": "2024-07-12T01:42:09.276185Z",
   "chain_id": "spc-devnet-1",
   "initial_height": "1",
   "consensus_params": {
@@ -49,7 +49,7 @@
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "saga15lmh7y48u0frk0u9jjy2cxs2g3w3830jse8psr",
+          "address": "saga1y73rc9nx947qh3vslej7uxv08za04tnj7xvrk6",
           "pub_key": null,
           "account_number": "1",
           "sequence": "0"
@@ -89,7 +89,7 @@
           ]
         },
         {
-          "address": "saga1f4m6cjmmxdymujyd96f0sx6t6ejdyw5wlu0s2p",
+          "address": "saga1y73rc9nx947qh3vslej7uxv08za04tnj7xvrk6",
           "coins": [
             {
               "denom": "stake",
@@ -102,7 +102,7 @@
           ]
         },
         {
-          "address": "saga15lmh7y48u0frk0u9jjy2cxs2g3w3830jse8psr",
+          "address": "saga1f4m6cjmmxdymujyd96f0sx6t6ejdyw5wlu0s2p",
           "coins": [
             {
               "denom": "stake",
@@ -322,7 +322,69 @@
               {
                 "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
                 "description": {
-                  "moniker": "roman",
+                  "moniker": "emanuel-devnet-2",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "saga1y73rc9nx947qh3vslej7uxv08za04tnj7xvrk6",
+                "validator_address": "sagavaloper1y73rc9nx947qh3vslej7uxv08za04tnjsd6qut",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "L/cTwj2A2a33jf26vvZJaUdCPHMTqxUbVaq/MtbdUsE="
+                },
+                "value": {
+                  "denom": "stake",
+                  "amount": "1500000"
+                }
+              }
+            ],
+            "memo": "2313466dbde13bc69fd8e1c7995b13609575d59f@spc.emanuel-devnet-2.spc-devnet-1.sagarpc.xyz:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AuQol+8gKK26O1a7Zb+Bme4vqFWQLrc3kd4IyDiYoi4+"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "j/C45eyXpMfKIou4d4c9SAdro7E/82gXo9SQj0j6mrYNOWP0thp2vkp/fw1hCocLXq59CeKuuSpXChZyu9lGUg=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "bogdan-devnet-val",
                   "identity": "",
                   "website": "",
                   "security_contact": "",
@@ -346,7 +408,7 @@
                 }
               }
             ],
-            "memo": "76b7e2a17ae3ae7b8dbf68a4c23e3401f1d214ef@spc.roman.spc-devnet-1.sagarpc.xyz:26656",
+            "memo": "92304c8f2fbcaebb8d4df851d5f12d614a77d8df@spc.bogdan-devenet-val.spc-devnet-1.sagarpc.xyz:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -375,69 +437,7 @@
             "tip": null
           },
           "signatures": [
-            "G55OXmYWd6GWLbBYMbTfoE2pM6zu7xuVlK5fHe44rTkl52IG6qOwQvw1aTMVWfuoPrXI41OxL7Wso+bJR7o1ZA=="
-          ]
-        },
-        {
-          "body": {
-            "messages": [
-              {
-                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
-                "description": {
-                  "moniker": "devnet-validator-2",
-                  "identity": "",
-                  "website": "",
-                  "security_contact": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "min_self_delegation": "1",
-                "delegator_address": "saga15lmh7y48u0frk0u9jjy2cxs2g3w3830jse8psr",
-                "validator_address": "sagavaloper15lmh7y48u0frk0u9jjy2cxs2g3w3830j7j3z6j",
-                "pubkey": {
-                  "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "1FZ3oXKpsEsgawv8PXbw/qch4NUIqR8dm6y9R8ZU4Wo="
-                },
-                "value": {
-                  "denom": "stake",
-                  "amount": "1500000"
-                }
-              }
-            ],
-            "memo": "d860ab0678cfa705fbd89eb688d9e76c1f17f64c@spc.devnet-validator-2.spc-devnet-1.sagarpc.xyz:26656",
-            "timeout_height": "0",
-            "extension_options": [],
-            "non_critical_extension_options": []
-          },
-          "auth_info": {
-            "signer_infos": [
-              {
-                "public_key": {
-                  "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "A2gZnDSEhVWYb9CmSlr5dv0F2hzkox4g/24QWzpFcUHo"
-                },
-                "mode_info": {
-                  "single": {
-                    "mode": "SIGN_MODE_DIRECT"
-                  }
-                },
-                "sequence": "0"
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas_limit": "200000",
-              "payer": "",
-              "granter": ""
-            },
-            "tip": null
-          },
-          "signatures": [
-            "y1S3TNcnrrT52Ley0YZ90B4XLsbaWtpNQ8C2ox+ED/Z1n+SMkmrHm02oVgMW0C7lvwYIkKaEPdHSDOm46vMV3A=="
+            "3Qaeh/bhWFudhd+qPtev+2mQbdHh5gSm5D0tENeu/FpMFAdJkzAP0Ul5PGANpaWdZNkuWYY92hIoElvsgK3rwg=="
           ]
         }
       ]
