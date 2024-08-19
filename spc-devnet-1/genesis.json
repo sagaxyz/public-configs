@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2024-07-12T01:42:09.276185Z",
+  "genesis_time": "2024-08-08T15:50:00.400909Z",
   "chain_id": "spc-devnet-1",
   "initial_height": "1",
   "consensus_params": {
@@ -42,30 +42,44 @@
       "accounts": [
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "saga1f4m6cjmmxdymujyd96f0sx6t6ejdyw5wlu0s2p",
+          "address": "saga162k9aqdgagr6qwjugqaktfycaechhnpzgl3rgs",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "saga1y73rc9nx947qh3vslej7uxv08za04tnj7xvrk6",
+          "address": "saga1yuvju0cztlahsf6f37z9j83vwyzgj6pzhx090f",
           "pub_key": null,
           "account_number": "1",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "saga162k9aqdgagr6qwjugqaktfycaechhnpzgl3rgs",
+          "address": "saga13x6at6w2xre4svsmnla0uspkey0es98k7smvt2",
           "pub_key": null,
           "account_number": "2",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "saga1yuvju0cztlahsf6f37z9j83vwyzgj6pzhx090f",
+          "address": "saga12e5f6yqaedqx5eqxalfhl042zacxxehcde2tne",
           "pub_key": null,
           "account_number": "3",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "saga1mfsl0hh8th25emr72ultmu66s6vn2szkcv5upq",
+          "pub_key": null,
+          "account_number": "4",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "saga1vf45xzgglpe9nnam6p4sklhemmvwrnq2kydgs3",
+          "pub_key": null,
+          "account_number": "5",
           "sequence": "0"
         }
       ]
@@ -89,7 +103,7 @@
           ]
         },
         {
-          "address": "saga1y73rc9nx947qh3vslej7uxv08za04tnj7xvrk6",
+          "address": "saga12e5f6yqaedqx5eqxalfhl042zacxxehcde2tne",
           "coins": [
             {
               "denom": "stake",
@@ -102,7 +116,20 @@
           ]
         },
         {
-          "address": "saga1f4m6cjmmxdymujyd96f0sx6t6ejdyw5wlu0s2p",
+          "address": "saga1vf45xzgglpe9nnam6p4sklhemmvwrnq2kydgs3",
+          "coins": [
+            {
+              "denom": "stake",
+              "amount": "1500000"
+            },
+            {
+              "denom": "upsaga",
+              "amount": "50000000000000"
+            }
+          ]
+        },
+        {
+          "address": "saga13x6at6w2xre4svsmnla0uspkey0es98k7smvt2",
           "coins": [
             {
               "denom": "stake",
@@ -120,6 +147,19 @@
             {
               "denom": "stake",
               "amount": "1000000000"
+            }
+          ]
+        },
+        {
+          "address": "saga1mfsl0hh8th25emr72ultmu66s6vn2szkcv5upq",
+          "coins": [
+            {
+              "denom": "stake",
+              "amount": "1500000"
+            },
+            {
+              "denom": "upsaga",
+              "amount": "50000000000000"
             }
           ]
         }
@@ -322,23 +362,23 @@
               {
                 "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
                 "description": {
-                  "moniker": "emanuel-devnet-2",
-                  "identity": "",
-                  "website": "",
-                  "security_contact": "",
-                  "details": ""
+                  "moniker": "Enigma",
+                  "identity": "6223697ACA24A4FF",
+                  "website": "https://enigma-validator.com/",
+                  "security_contact": "contact@enigma-validator.com",
+                  "details": "Highly secure professional validator across 40+ chains - offering a full refund for any downtime slashing - Reach out to us at contact@enigma-validator.com"
                 },
                 "commission": {
-                  "rate": "0.100000000000000000",
+                  "rate": "0.050000000000000000",
                   "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
+                  "max_change_rate": "0.100000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "saga1y73rc9nx947qh3vslej7uxv08za04tnj7xvrk6",
-                "validator_address": "sagavaloper1y73rc9nx947qh3vslej7uxv08za04tnjsd6qut",
+                "delegator_address": "saga12e5f6yqaedqx5eqxalfhl042zacxxehcde2tne",
+                "validator_address": "sagavaloper12e5f6yqaedqx5eqxalfhl042zacxxehcrjugeg",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "L/cTwj2A2a33jf26vvZJaUdCPHMTqxUbVaq/MtbdUsE="
+                  "key": "YMRqKQH6yuBHBsaG02a1s9+aLHEnFY2xmXZVbP2TVUI="
                 },
                 "value": {
                   "denom": "stake",
@@ -346,7 +386,7 @@
                 }
               }
             ],
-            "memo": "2313466dbde13bc69fd8e1c7995b13609575d59f@spc.emanuel-devnet-2.spc-devnet-1.sagarpc.xyz:26656",
+            "memo": "83dd7b27c9dd9ce65ab9a791982f04f18206f5c5@spc.enigma.spc-devnet-1.enigma-validator.com:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -356,7 +396,7 @@
               {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "AuQol+8gKK26O1a7Zb+Bme4vqFWQLrc3kd4IyDiYoi4+"
+                  "key": "A5f8uIZVnbj8Quvf4NFWstNnqkYy6/pN449pEOnsWHeN"
                 },
                 "mode_info": {
                   "single": {
@@ -375,7 +415,7 @@
             "tip": null
           },
           "signatures": [
-            "j/C45eyXpMfKIou4d4c9SAdro7E/82gXo9SQj0j6mrYNOWP0thp2vkp/fw1hCocLXq59CeKuuSpXChZyu9lGUg=="
+            "NaXvXfBab4TP/hHHaK1oDQpQoa/293zb0IOFAzMA7Zw+8H0BPs6s/+DqroLPeXKbPpS/0UIaEIQQpPUs0KONkg=="
           ]
         },
         {
@@ -384,7 +424,7 @@
               {
                 "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
                 "description": {
-                  "moniker": "bogdan-devnet-val",
+                  "moniker": "p2p-validator",
                   "identity": "",
                   "website": "",
                   "security_contact": "",
@@ -396,11 +436,11 @@
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "saga1f4m6cjmmxdymujyd96f0sx6t6ejdyw5wlu0s2p",
-                "validator_address": "sagavaloper1f4m6cjmmxdymujyd96f0sx6t6ejdyw5w3henqs",
+                "delegator_address": "saga1vf45xzgglpe9nnam6p4sklhemmvwrnq2kydgs3",
+                "validator_address": "sagavaloper1vf45xzgglpe9nnam6p4sklhemmvwrnq2c0mt6q",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "xenFjakinVdo4CbVuyy2Aw46PA5AhJsSS0bu+hSaSqI="
+                  "key": "c4ysXi3gLP7aNY9LaKfj69ESPzSJMUP67FsNzZT0oL4="
                 },
                 "value": {
                   "denom": "stake",
@@ -408,7 +448,7 @@
                 }
               }
             ],
-            "memo": "92304c8f2fbcaebb8d4df851d5f12d614a77d8df@spc.bogdan-devenet-val.spc-devnet-1.sagarpc.xyz:26656",
+            "memo": "8a253e0f3060bb0d630c5681462733e97ac5241a@spc.p2p-validator.spc-devnet-1.tm.p2p.net:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -418,7 +458,7 @@
               {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "AxUvbfbwmj8R2Bkt/Eh4/N592FYdJMpF0dHPARSG8CfS"
+                  "key": "AlaRXGzxWDdZKkPgbwS+YgLo5jj8FXpTi/v1YvRKv3jj"
                 },
                 "mode_info": {
                   "single": {
@@ -437,7 +477,131 @@
             "tip": null
           },
           "signatures": [
-            "3Qaeh/bhWFudhd+qPtev+2mQbdHh5gSm5D0tENeu/FpMFAdJkzAP0Ul5PGANpaWdZNkuWYY92hIoElvsgK3rwg=="
+            "tBNE0lgU+m0Bd+xJAbssqT0dgYXpDjMT7eQF4LYeiy9BDyOiHBKG3zFcNB1GityTZXRjk9GVSHAdRl5bW43ceA=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "saga-devnet-1",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "saga13x6at6w2xre4svsmnla0uspkey0es98k7smvt2",
+                "validator_address": "sagavaloper13x6at6w2xre4svsmnla0uspkey0es98ksmd0pm",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "UOLW+lygXEguyDc9izRiSWcuqjYKoCczjnGCeOp75Pc="
+                },
+                "value": {
+                  "denom": "stake",
+                  "amount": "1500000"
+                }
+              }
+            ],
+            "memo": "60d40246acb64a94fc7ab62d0f82a57a263e2a64@spc.saga-devnet-1.spc-devnet-1.sagarpc.xyz:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AutPZYNBPEMxL723puz57pvoN83qsUD77WtXQHpfXnTZ"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "ckf+0GSrxOFw20PuaQocro24AH/ATY6lgNGNoVj3i9okywBTkkhu6ejOx+98hXm5jjGZPLrdIXa1ovjueWS62w=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "simplystaking",
+                  "identity": "4095165BF57B60BE",
+                  "website": "www.simplystaking.com",
+                  "security_contact": "staking@simplystaking.com",
+                  "details": "Simply Staking runs highly reliable and secure infrastructure in our own datacentre in Malta, built with the aim of supporting the growth of the blockchain ecosystem."
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "saga1mfsl0hh8th25emr72ultmu66s6vn2szkcv5upq",
+                "validator_address": "sagavaloper1mfsl0hh8th25emr72ultmu66s6vn2szkk8zlt3",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "tjvkSrhPUH9Xnk/zp5tAesc1DaLM/9/PssySifvaGqc="
+                },
+                "value": {
+                  "denom": "stake",
+                  "amount": "1500000"
+                }
+              }
+            ],
+            "memo": "fd01afa10f48e613cadb0b5663ef0fb73f4007ac@spc.simplystaking.spc-devnet-1.saga-devnet.simplystaking.xyz:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AwohvuUYOUoIgS3HOWNb2ipAu+Eo4h2JjB/7aYIJqMd/"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "aEo1NrBd60/rDH4vjzYIHbQTLXtnw9IW7wQPkS4E/glu+J43y35JYHVN54Xs4AQ8ZVLDY+mkBDfAj/n+DKPRLw=="
           ]
         }
       ]
